@@ -1,0 +1,18 @@
+div.container {
+  margin: 1rem;
+
+  > div.table-toolbar-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    > div.toolbar-right-wrapper {
+      > button {
+      }
+    }
+  }
+
+  > table {
+  }
+}

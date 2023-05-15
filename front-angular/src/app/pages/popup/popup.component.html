@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Add new row</h1>
+<div mat-dialog-content>
+  <form [formGroup]="popupForm">
+    <div class="form-container">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Age</mat-label>
+        <input matInput type="number" formControlName="age" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Sex</mat-label>
+        <mat-select formControlName="sex">
+          <mat-option value="1">Male</mat-option>
+          <mat-option value="2">Female</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+
+<div class="dialog-actions-container" mat-dialog-actions>
+  <button color="primary" mat-button (click)="onSubmit()">Submit</button>
+  <button mat-button (click)="onCancel()">Cancel</button>
+</div>
